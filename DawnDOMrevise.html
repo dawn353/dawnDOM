@@ -10,11 +10,11 @@
 <body>
 
 
-<form onSubmit='submitForm(event)'>
+<!-- <form onSubmit='submitForm(event)'>
   <label>Enter Name:</label><br>
   <input type='text' id='firstName' placeholder='First Name'><br>
   <input type='submit'>
-</form>
+</form> -->
 
 <div>
   <p>Hello my name is :<strong id='valueFirstName'> </strong><p/>
@@ -26,6 +26,12 @@
 
 
 
-<script src="script.js"></script>
+<script>
+	
+	var name = prompt("Enter your name");
+	console.log(name)
+	document.getElementById('valueFirstName').innerHTML = name;
+
+</script>
 </body>
 </html>
